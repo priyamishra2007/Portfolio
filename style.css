@@ -1,0 +1,48 @@
+/* 🌻 Priya's sparkle CSS 🌻 */
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Links: hover effect */
+a {
+  color: inherit; /* keeps your existing link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff6666; /* cute pink hover */
+  text-decoration: underline;
+}
+
+/* Images: responsiveness */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* soft corners */
+}
+
+/* Body: prevent sideways scroll */
+body {
+  overflow-x: hidden;
+}
+
+/* Project cards: box-shadow and lift on hover */
+.project-card {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Optional: section titles spacing */
+section h2 {
+  margin-top: 1.5rem;
+}
