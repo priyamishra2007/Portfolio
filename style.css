@@ -1,36 +1,78 @@
-/* 🌻 Priya's sparkle CSS 🌻 */
+/* 🌻 Priya's Sparkle CSS 🌻 */
+
+/* Keep body black background & fonts */
+body {
+  background-color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: medium;
+  overflow-x: hidden;
+}
+
+/* Header style (inside <pre>) */
+pre {
+  background-color: cadetblue;
+  margin: 0;
+  padding: 1rem; /* optional: adds space inside */
+}
+
+/* Header text centering */
+header h1 {
+  text-align: center;
+}
+
+/* Image style */
+header img {
+  height: 20%;
+  width: 20%;
+  float: right; /* align right */
+  /* clickable attribute doesn’t exist – so just wrap in <a> in HTML if you want */
+  border-radius: 8px; /* optional: soft corners */
+}
+
+/* Table style */
+table {
+  /* you had background-color: ; (empty) so keeping it default */
+  height: 100px;
+  width: 1000px;
+  margin: 1rem auto; /* center the table */
+}
+
+/* Table links */
+table a {
+  color: inherit; /* keeps link color same as parent text */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+table a:hover {
+  color: #ff6666;
+  text-decoration: underline;
+}
+
+/* About section */
+#about {
+  color: white; /* so text shows on black bg */
+  padding: 1rem;
+}
+
+#about h2 {
+  margin-top: 1.5rem;
+}
 
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* Links: hover effect */
-a {
-  color: inherit; /* keeps your existing link color */
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: #ff6666; /* cute pink hover */
-  text-decoration: underline;
-}
-
-/* Images: responsiveness */
+/* Images responsive */
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px; /* soft corners */
 }
 
-/* Body: prevent sideways scroll */
-body {
-  overflow-x: hidden;
-}
-
-/* Project cards: box-shadow and lift on hover */
+/* Optional: project card hover effect if you add projects later */
 .project-card {
+  background: #fff;
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 10px;
@@ -40,9 +82,4 @@ body {
 
 .project-card:hover {
   transform: translateY(-5px);
-}
-
-/* Optional: section titles spacing */
-section h2 {
-  margin-top: 1.5rem;
 }
