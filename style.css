@@ -27,10 +27,10 @@ header h1 {
 }
 
 header img {
-  height: 20%;
-  width: 20%;
+  height: 10%;
+  width: 10%;
   border-radius: 8px;
-  max-width: 150px; /* keep it from growing too large */
+  max-width: 100px; /* keep it from growing too large */
 }
 
 header h2 {
