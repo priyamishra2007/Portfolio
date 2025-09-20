@@ -15,22 +15,23 @@ header {
   padding: 1rem 2rem;
 }
 
-.header-content {
-  position: relative;   /* lets us position the photo inside */
+header {
+  background-color: cadetblue;
   padding: 1rem 2rem;
+  position: relative; /* needed for absolute positioning of photo */
+}
+
+.header-content {
+  display: flex;
+  justify-content: flex-start; /* keep text on left */
+  align-items: flex-start;     /* align to top */
+  gap: 20px;
+  flex-wrap: wrap;
+  position: relative;
 }
 
 .header-text {
-  max-width: 70%; /* keep text on the left */
-}
-
-header h1 {
-  margin: 0 0 0.5rem 0;
-}
-
-header h2 {
-  margin: 0;
-  font-weight: normal;
+  max-width: 70%; /* text block stays on left */
 }
 
 .header-photo {
@@ -40,10 +41,36 @@ header h2 {
 }
 
 .header-photo img {
-  width: 90px;   /* small size */
+  width: 90px;   /* very small */
   height: 90px;
-  border-radius: 50%;
+  border-radius: 50%; /* circle */
   object-fit: cover;
+}
+
+/* Responsive: photo drops below text on small screens */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-photo {
+    position: static; /* removes absolute positioning */
+    margin-top: 1rem;
+  }
+
+  .header-text {
+    max-width: 100%;
+  }
+}
+header h1 {
+  margin: 0 0 0.5rem 0;
+}
+
+header h2 {
+  margin: 0;
+  font-weight: normal;
 }
 
 
