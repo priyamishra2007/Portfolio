@@ -16,14 +16,12 @@ header {
 }
 
 .header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 2rem;
+  position: relative;   /* lets us position the photo inside */
+  padding: 1rem 2rem;
 }
 
 .header-text {
-  flex: 1;
+  max-width: 70%; /* keep text on the left */
 }
 
 header h1 {
@@ -35,10 +33,16 @@ header h2 {
   font-weight: normal;
 }
 
+.header-photo {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
 .header-photo img {
-  width: 100px;   /
-  height: 100px;
-  border-radius: 50%; /* circle */
+  width: 90px;   /* small size */
+  height: 90px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
