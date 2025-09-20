@@ -19,7 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* allows stacking on smaller screens */
+  padding: 0.5rem 2rem;
 }
 
 .header-text {
@@ -36,11 +36,12 @@ header h2 {
 }
 
 .header-photo img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; /* circular photo */
+  width: 100px;   /
+  height: 100px;
+  border-radius: 50%; /* circle */
   object-fit: cover;
 }
+
 
 /* About section */
 #about {
